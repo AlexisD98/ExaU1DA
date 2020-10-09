@@ -1,0 +1,60 @@
+package exau1da;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Operacion {
+    int res=0;//Global
+    int num,num2,num3;
+    int datos;
+    List  ejemplo = new ArrayList();//Lista Declarada de tipo Stirng
+    Scanner entrada= new Scanner(System.in); //Delcaracion de Scanner
+    
+    public void metodoinsertar(){
+        for(int i=0;i<10;i++){
+        System.out.println("Inserte Datos: ");
+        datos=entrada.nextInt();
+        ejemplo.add(datos);
+        }
+        
+    }
+    public void metodosuma(){
+        System.out.println("Inserte 3 posiciones");
+        System.out.println("-----------------------------");
+        System.out.print("Inserte posicion 1: ");
+        num=entrada.nextInt();
+        System.out.print("Inserte posicion 2: ");
+        num2=entrada.nextInt();
+        System.out.print("Inserte posicion 3: ");
+        num3=entrada.nextInt();
+        System.out.println("-----------------------------");
+        res=num+num2+num3;
+        System.out.println("Resultado es: "+res);
+    }
+    public void metodoresta(){
+        System.out.println("Inserte 2 datos");
+        System.out.println("-----------------------------");
+        System.out.print("Inserte posicion: ");
+        num=entrada.nextInt();
+        System.out.print("Inserte posicion: ");
+        num2=entrada.nextInt();
+        System.out.println("-----------------------------");
+        res=num-num2;
+        System.out.println("Resultado es: "+res);
+       
+    }
+    public void metodomulti(){
+        System.out.println("Inserte 3 datos");
+        System.out.println("-----------------------------");
+        System.out.print("Inserte posicion 1: ");
+        num=entrada.nextInt();
+        System.out.print("Inserte posicion 2: ");
+        num2=entrada.nextInt();
+        System.out.print("Inserte posicion 3: ");
+        num3=entrada.nextInt();
+        System.out.println("-----------------------------");
+        res=num*num2*num3;
+        System.out.println("Resultado es: "+res);
+       
+    }
+}
