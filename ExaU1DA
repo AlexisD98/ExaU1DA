@@ -1,0 +1,47 @@
+package exau1da;
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+//Suma y multiplicacion es de 3 numeros
+//Posicion apartir del 1 a 10, posicion 0 NO VALE
+public class ExaU1DA {
+    public static void main(String[] args) {
+        Operacion instanciaOperacion=new Operacion(); //Llamada de clase
+        instanciaOperacion.metodoinsertar();
+        Scanner entrada= new Scanner(System.in); //Delcaracion de Scanner
+        int opc=0;
+        int c=0;
+        
+        do{
+        System.out.println(" *Examen U1 GamerPink* ");
+        System.out.println("-----------------------------");
+        System.out.println("Selecciones su Opcion: ");
+        System.out.println("1 Suma");
+        System.out.println("2 Resta");
+        System.out.println("3 Multplicacion");
+        System.out.println("4 Salir");
+        System.out.println("-----------------------------");
+        opc =entrada.nextInt();
+        
+        switch(opc){
+            case 1:
+                instanciaOperacion.metodosuma();
+                break;
+            case 2:
+                instanciaOperacion.metodoresta();
+                break;
+            case 3:
+                instanciaOperacion.metodomulti();
+                break;
+            case 4:
+                System.exit(0);
+                break;
+            
+        }//Switch
+        System.out.println("¿Desea realizar otra accion? 1.Si 2.No");
+           c = entrada.nextInt();
+        }while(c==1);
+    }
+    
+}
